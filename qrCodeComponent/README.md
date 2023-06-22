@@ -2,7 +2,7 @@
 Frontendmentor's QR Code Component project using HTML & CSS.
 
 ## Live Preview
-- Liev preview using GitHub pages - [QR Code Component](https://jsalinas214.github.io/FrontendMentor/)
+- Liev preview using GitHub pages - [QR Code Component](https://64947b4300bea9506a750d5d--resonant-panda-1c88f3.netlify.app/)
 
 ## Built with
 - HTML -- Semantic HTML5 elements
@@ -13,6 +13,7 @@ Frontendmentor's QR Code Component project using HTML & CSS.
 - Frontendmentor - [Starter Code](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H)
 - OpenClipArt - [SVG](https://www.openclipart.org/detail/122107/default-profile-picture)
 - CanIUse - [CSS Variables Browser Support](https://caniuse.com/css-variables)
+- Netlify - [Web Hosting](https://netlify.com/)
 
 ## Author
 - LinkedIn - [JamesSalinas](https://www.linkedin.com/in/james-salinas-06a505199)
