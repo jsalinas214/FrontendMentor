@@ -1,0 +1,299 @@
+@font-face {
+   font-family: Roboto;
+   src: url(./assets/fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+   font-family: Roboto;
+   src: url(./assets/fonts/Roboto-Bold.ttf);
+   font-weight: bold;
+}
+
+:root {
+   --tomato: hsl(4, 100%, 67%);
+   --dark-grey: hsl(234, 29%, 20%);
+   --charcoal-grey: hsl(235, 18%, 26%);
+   --grey: hsl(231, 7%, 60%);
+   --white: hsl(0, 0%, 100%);
+   --btn-gradient: linear-gradient(to right, hsl(4, 100%, 67%) 70%, hsl(20, 100%, 65%));
+}
+
+*, *::before, *::after {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   font-family: Roboto, sans-serif;
+   font-size: 16px;
+   color: var(--dark-grey);
+   max-width: 375px;
+}
+
+header {
+   height: 7vh;
+   display: flex;
+   justify-content: center;
+   background-color: var(--dark-grey);
+}
+
+.header-link {
+   cursor: pointer;
+   text-decoration: none;
+   color: var(--white);
+}
+
+.header-span {
+   font-size: 1.1em;
+   position: relative;
+   bottom: 0.5em;
+}
+
+main {
+   background-color: var(--white);
+}
+
+main h1, 
+main p {
+   width: 80%;
+   margin: 0 auto;
+   padding: 1rem 0;
+}
+
+.main-img {
+   padding-bottom: .75rem;
+}
+
+.desktop-img {
+   display: none;
+}
+
+main p {
+   color: var(--charcoal-grey);
+}
+
+.info {
+   width: 80%;
+   margin: 0 auto;
+   color: var(--charcoal-grey);
+}
+
+ul {
+   list-style-type: none;
+}
+
+ul li {
+   padding-left: 2rem;
+   padding-bottom: 1rem;
+}
+
+ul li::before {
+   content: '';
+   background-size: 1rem;
+   background-image: url('./assets/images/icon-list.svg');
+   background-repeat: no-repeat;
+   display: inline-block;
+   height: 1rem;
+   width: 1rem;
+   position: absolute;
+   left: 2.5rem;
+}
+
+.form {
+   padding-top: 1.5rem;
+}
+
+label, input, button {
+   display: flex;
+   width: 80%;
+   margin: 0.5rem auto;
+}
+
+label {
+   font-size: .75rem;
+   font-weight: bold;
+}
+
+input {
+   padding: 1rem;
+   border-radius: .5rem;
+   border: 1px solid var(--grey);
+   margin-bottom: 1rem;
+}
+
+input::placeholder {
+   color: var(--grey);
+}
+
+input:focus {
+   border: 1px solid var(--dark-grey);
+}
+
+button {
+   background-color: var(--dark-grey);
+   color: var(--white);
+   padding: 1rem;
+   border-radius: .5rem;
+   display: flex;
+   justify-content: center;
+   font-weight: bold;
+   margin-bottom: 2rem;
+   cursor: pointer;
+}
+
+button:hover,
+button:focus {
+   background: var(--btn-gradient);
+}
+
+/* aside section */
+aside {
+   width: 80%;
+   margin: 0 auto;
+   padding-top: 8rem;
+   display: none;
+}
+
+aside h2 {
+   font-size: 2.5rem;
+   padding-top: 1.5rem;
+}
+aside p {
+   color: var(--charcoal-grey);
+   padding-top: 1rem;
+   padding-bottom: 15rem;
+   line-height: 1.4;
+}
+
+aside span {
+   color: var(--dark-grey);
+   font-weight: bold;
+}
+
+aside button {
+   width: 100%;
+}
+
+/* end of aside section */
+
+footer {
+   height: 10vh;
+   color: var(--white);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: var(--dark-grey);
+}
+
+.footer-link {
+   color: var(--white);
+}
+
+.attribution {
+   text-align: center;
+   font-size: 1.125em;
+}
+
+/* media query for desktop browsers */
+@media screen and (min-width: 376px) {
+   body {
+      min-width: 376px;
+      max-width: 1440px;
+      background-color: var(--charcoal-grey);
+   }
+
+   header {
+      margin-bottom: 15rem;
+   }
+
+   .header-link {
+      align-self: center;
+      font-size: 1.5rem;
+   }
+
+   main  {
+      height: 40rem;
+      width: 62.5%;
+      margin: 0 auto;
+      padding: 1.5rem;
+      border-radius: 1.5rem;
+      display: grid;
+      grid-template-areas: 
+         "l1 right"
+         "l2 right"
+         "l3 right"
+         "l4 right";
+   }
+
+   main h1 {
+      grid-area: l1;
+      padding: 0;
+      align-self: end;
+      font-size: 3rem;
+   }
+
+   main p {
+      grid-area: l2;
+      padding: 0;
+      align-self: center;
+   }
+
+   .main-img {
+      display: none;
+   }
+
+   .desktop-img {
+      display: inline;
+      grid-area: right;
+   }
+
+   .info {
+      grid-area: l3;
+      align-self: center;
+   }
+
+   ul li::before {
+      left: 21.25rem;
+   }
+
+   .form {
+      grid-area: l4;
+      padding-top: 0;
+   }
+
+   aside {
+      display: block;
+      background: white;
+      width: 40%;
+      border-radius: 2rem;
+      padding: 3rem;
+   }
+
+   aside h2 {
+      padding-top: 2rem;
+      font-size: 4rem;
+   }
+
+   aside p {
+      padding-top: 2rem;
+      padding-bottom: 3rem;
+      font-size: 1.3rem;
+   }
+
+   aside button {
+      padding: 1.5rem;
+      font-size: 1.2rem;
+   }
+
+   footer {
+      margin-top: 10rem;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+   }
+
+   .footer-link {
+      font-size: 1.5rem;
+   }
+}

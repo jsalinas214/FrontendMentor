@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+   <link rel="stylesheet" href="style.css">
+   <title>Frontend Mentor | Newsletter Sign-Up Form</title>
+</head>
+<body>
+   <header>
+      <a class="header-link" href="https://www.frontendmentor.io/profile/jsalinas214" target="_blank">
+         <img class="header-img" src="./assets/images/profile.svg" height="40" width="40" alt="profile SVG">
+         <span class="header-span">Visit My Profile</span>
+      </a>
+   </header>
+   <main>
+      <img src="./assets/images/illustration-sign-up-mobile.svg" alt="newsletter svg" class="main-img">
+      <img src="./assets/images/illustration-sign-up-desktop.svg" alt="newsletter  svg for large screens" class="desktop-img">
+      <h1>Stay updated!</h1>
+      <p>Join 60,000+ product managers receiving monthly updates on:</p>
+      <section class="info">
+         <ul>
+            <li>Product discovery and building what matters</li>
+            <li>Measuring to ensure updates are a success</li>
+            <li>And much more!</li>
+         </ul>
+      </section>
+      <form action="" class="form">
+         <label for="email">Email address</label>
+         <input type="email" name="email" id="email" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" placeholder="email@company.com" required>
+         <button type="submit" id="subscribe-btn">Subscribe to our monthly newsletter</button>
+      </form>
+   </main>
+   <aside id="success-msg">
+      <img src="./assets/images/icon-success.svg" alt="success icon" class="success-img">
+      <h2>Thanks for subscribing!</h2>
+      <p>A confirmation email has been sent to <span id="mail"></span>.
+         Please open it and click the button inside to confirm your subscription</p>
+      <button id="dismiss-btn">Dismiss message</button>
+   </aside>
+   <footer>
+      <div class="attribution">
+         Challenge by <a class="footer-link" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+         Coded by <a class="footer-link" href="https://github.com/Arekkusu17">James Salinas</a>.
+      </div>
+   </footer>
+</body>
+</html>
